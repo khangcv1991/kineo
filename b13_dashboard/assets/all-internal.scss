@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:300,400);
+#b13_dashboard_div {
+    @import "dashboard/css/dashboard";
+    @import "bootstrap/bootstrap";
+    @import "dataTables/jquery.dataTables";
+    @import "dropzone/css/dropzone";
+    .breadcrumb {
+        display: none !important;
+    }
+    .element-header {
+        .setting {
+            display: inline-block;
+            float: right;
+            margin-left: 14px;
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+        .help {
+            font-size: 14px;
+            float: right;
+            line-height: 2.3;
+        }
+    }
+    .content-w {
+        //background: transparent !important;
+        border-radius: 6px;
+        .content-i .content-box {
+            padding: 12px !important;
+        }
+    }
+    .menu-b13 {
+        padding: 0 !important;
+    }
+    .submenu-b13 li {
+        list-style: none !important;
+    }
+}
+#block-region-side-pre {
+    @import "dashboard/css/main-menu";
+    .menu-b13 {
+        .submenu-b13 {
+            display: none;
+            margin: 0;
+        }
+        .active {
+            .submenu-b13 {
+                display: block !important;
+            }
+            > a > span {
+                font-weight: bold;
+            }
+        }
+        > li {
+            line-height: 1.5rem;
+            padding: 1px 0 !important;
+            a {
+                .menu-icon {
+                    width: 35px !important;
+                    height: 35px !important;
+                }
+                span {
+                    padding: 11px !important;
+                }
+            }
+        }
+    }
+    .dashboard_menu_html {
+        &.logo {
+            text-align: center;
+            margin: 10% 10% 0;
+            img {
+                width: 100%;
+                max-width: 270px;
+            }
+        }
+    }
+}
+
+@import "print";
