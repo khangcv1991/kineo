@@ -12,4 +12,3 @@
 defined('MOODLE_INTERNAL') || die;
 
 $plugin->version  = 2012052800;
-$plugin->component = 'scormreport_uploadscormusers';
